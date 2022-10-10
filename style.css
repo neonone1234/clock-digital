@@ -15,7 +15,7 @@ body {
   background: #fffff;
   font-family: monospace;
   min-height: 100vh;
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: center;
 }
@@ -36,7 +36,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   
-  position: relative;
+  position: sticky;
 }
 .clock-col:not(:last-child):before, .clock-col:not(:last-child):after {
   content: "";
@@ -66,7 +66,7 @@ body {
   margin-top: 10px;
 }
 
-@media (max-width: 825px) {
+@media (max-width: 200px) {
   .clock-container {
     flex-direction: column;
     padding-top: 40px;
